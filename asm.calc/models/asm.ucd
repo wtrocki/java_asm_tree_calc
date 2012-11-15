@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="asm" size="1180,715" id="pl.uz.zgora.calculator.asm" metadata="uml2-1.0" initialized="true" tag="1000" key="32303037303533312D3130303020706C2E757A2E7A676F72612E63616C63756C61746F722F74726F6B656E">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0" name="ComputeHeapFromTree" location="795,465" size="194,193" id="pl.uz.zgora.calculator.asm/ComputeHeapFromTree">
+    <children xsi:type="editmodel:CompartmentEditModel" size="131,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="stack" id="pl.uz.zgora.calculator.asm/ComputeHeapFromTree#stack"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="symbols" id="pl.uz.zgora.calculator.asm/ComputeHeapFromTree#symbols"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tree" id="pl.uz.zgora.calculator.asm/ComputeHeapFromTree#tree"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="143,90">
+      <children xsi:type="editmodel:MethodEditModel" name="ComputeHeapFromTree" id="pl.uz.zgora.calculator.asm/ComputeHeapFromTree#ComputeHeapFromTree(Lpl.uz.zgora.calculator.core.tree.Tree;[Lpl.uz.zgora.calculator.core.gramar.elements.Symbol;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="computeHeap" id="pl.uz.zgora.calculator.asm/ComputeHeapFromTree#computeHeap()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getStack" id="pl.uz.zgora.calculator.asm/ComputeHeapFromTree#getStack()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setSymbols" id="pl.uz.zgora.calculator.asm/ComputeHeapFromTree#setSymbols([Lpl.uz.zgora.calculator.core.gramar.elements.Symbol;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setTree" id="pl.uz.zgora.calculator.asm/ComputeHeapFromTree#setTree(Lpl.uz.zgora.calculator.core.tree.Tree;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="AsmGenerator" location="840,255" size="133,85" id="pl.uz.zgora.calculator.asm/AsmGenerator">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="101,36">
+      <children xsi:type="editmodel:MethodEditModel" name="AsmGenerator" id="pl.uz.zgora.calculator.asm/AsmGenerator#AsmGenerator(Lpl.uz.zgora.calculator.core.tree.Tree;[Lpl.uz.zgora.calculator.core.gramar.elements.Symbol;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="generate" id="pl.uz.zgora.calculator.asm/AsmGenerator#generate()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="pl.uz.zgora.calculator.asm/AsmGenerator->Standard::Call" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import, Instantiate»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="66,85" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="111,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="pl.uz.zgora.calculator.asm/AsmGenerator-Soyatec::Access->pl.uz.zgora.calculator.asm/Registers" source="//@children.1" target="//@children.3" targetEnd="//@children.1/@sourceConnections.1/@children.2" label="//@children.1/@sourceConnections.1/@children.0" sourceEnd="//@children.1/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Access»" size="50,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="13,85" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="100,21"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="pl.uz.zgora.calculator.asm/AsmGenerator->Standard::Call" source="//@children.1" target="//@children.2" targetEnd="//@children.1/@sourceConnections.2/@children.2" label="//@children.1/@sourceConnections.2/@children.0" sourceEnd="//@children.1/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Access»" size="73,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,42" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="171,267"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.2 //@children.6/@sourceConnections.1 //@children.4/@sourceConnections.1" name="StringTemplates" location="405,30" size="171,409" id="pl.uz.zgora.calculator.asm/StringTemplates">
+    <children xsi:type="editmodel:CompartmentEditModel" size="148,198">
+      <children xsi:type="editmodel:AttributeEditModel" name="aDD_VARIABLE" id="pl.uz.zgora.calculator.asm/StringTemplates#aDD_VARIABLE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="aSM_COMMENT" id="pl.uz.zgora.calculator.asm/StringTemplates#aSM_COMMENT"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dELIMITER" id="pl.uz.zgora.calculator.asm/StringTemplates#dELIMITER"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dIV_VARIABLE" id="pl.uz.zgora.calculator.asm/StringTemplates#dIV_VARIABLE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mUL_VARIABLE" id="pl.uz.zgora.calculator.asm/StringTemplates#mUL_VARIABLE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pOP_VARIABLE" id="pl.uz.zgora.calculator.asm/StringTemplates#pOP_VARIABLE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pOWER_VARIABLE" id="pl.uz.zgora.calculator.asm/StringTemplates#pOWER_VARIABLE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pUSH_REGISTER" id="pl.uz.zgora.calculator.asm/StringTemplates#pUSH_REGISTER"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pUSH_VARIABLE" id="pl.uz.zgora.calculator.asm/StringTemplates#pUSH_VARIABLE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="rESULT" id="pl.uz.zgora.calculator.asm/StringTemplates#rESULT"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="sUB_VARIABLE" id="pl.uz.zgora.calculator.asm/StringTemplates#sUB_VARIABLE"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="57,162">
+      <children xsi:type="editmodel:MethodEditModel" name="add" id="pl.uz.zgora.calculator.asm/StringTemplates#add(Lpl.uz.zgora.calculator.asm.Registers;Lpl.uz.zgora.calculator.asm.Registers;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="div" id="pl.uz.zgora.calculator.asm/StringTemplates#div(Lpl.uz.zgora.calculator.asm.Registers;Lpl.uz.zgora.calculator.asm.Registers;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="mul" id="pl.uz.zgora.calculator.asm/StringTemplates#mul(Lpl.uz.zgora.calculator.asm.Registers;Lpl.uz.zgora.calculator.asm.Registers;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="pop" id="pl.uz.zgora.calculator.asm/StringTemplates#pop(Lpl.uz.zgora.calculator.asm.Registers;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="pow" id="pl.uz.zgora.calculator.asm/StringTemplates#pow(Lpl.uz.zgora.calculator.asm.Registers;Lpl.uz.zgora.calculator.asm.Registers;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="push" id="pl.uz.zgora.calculator.asm/StringTemplates#push(Ljava.lang.Double;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="push" id="pl.uz.zgora.calculator.asm/StringTemplates#push(Lpl.uz.zgora.calculator.asm.Registers;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="result" id="pl.uz.zgora.calculator.asm/StringTemplates#result(Lpl.uz.zgora.calculator.asm.Registers;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="sub" id="pl.uz.zgora.calculator.asm/StringTemplates#sub(Lpl.uz.zgora.calculator.asm.Registers;Lpl.uz.zgora.calculator.asm.Registers;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="pl.uz.zgora.calculator.asm/StringTemplates->Standard::Call" source="//@children.2" target="//@children.3" targetEnd="//@children.2/@sourceConnections.0/@children.2" label="//@children.2/@sourceConnections.0/@children.0" sourceEnd="//@children.2/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="94,409" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="49,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:EnumerationEditModel" targetConnections="//@children.1/@sourceConnections.1 //@children.2/@sourceConnections.0 //@children.4/@sourceConnections.2" name="Registers" location="450,567" size="100,125" id="pl.uz.zgora.calculator.asm/Registers">
+    <children xsi:type="editmodel:CompartmentEditModel" size="37,72">
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="eax" id="pl.uz.zgora.calculator.asm/Registers#eax%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="edx" id="pl.uz.zgora.calculator.asm/Registers#edx%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="ebx" id="pl.uz.zgora.calculator.asm/Registers#ebx%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="ecx" id="pl.uz.zgora.calculator.asm/Registers#ecx%"/>
+    </children>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Operation" location="50,429" size="129,139" id="pl.uz.zgora.calculator.asm/Operation" runTimeClassModel="getKind(),evaluate(),Operation(Lpl.uz.zgora.calculator.core.tree.TreeElemens;),kind,toString()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="106,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="kind" id="pl.uz.zgora.calculator.asm/Operation#kind"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="77,72">
+      <children xsi:type="editmodel:MethodEditModel" name="Operation" id="pl.uz.zgora.calculator.asm/Operation#Operation(Lpl.uz.zgora.calculator.core.tree.TreeElemens;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="evaluate" id="pl.uz.zgora.calculator.asm/Operation#evaluate()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getKind" id="pl.uz.zgora.calculator.asm/Operation#getKind()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="pl.uz.zgora.calculator.asm/Operation#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.6/@sourceConnections.0" autoLocated="true" id="pl.uz.zgora.calculator.asm/Element&lt;-pl.uz.zgora.calculator.asm/Operation" source="//@children.4" target="//@children.5" targetEnd="//@children.4/@sourceConnections.0/@children.1" sourceEnd="//@children.4/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="98,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="10,67" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="pl.uz.zgora.calculator.asm/Operation-Standard::Call->pl.uz.zgora.calculator.asm/StringTemplates" source="//@children.4" target="//@children.2" targetEnd="//@children.4/@sourceConnections.1/@children.2" label="//@children.4/@sourceConnections.1/@children.0" sourceEnd="//@children.4/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="29,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="129,4" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,403"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="pl.uz.zgora.calculator.asm/Operation-Soyatec::Access->pl.uz.zgora.calculator.asm/Registers" source="//@children.4" target="//@children.3" targetEnd="//@children.4/@sourceConnections.2/@children.2" label="//@children.4/@sourceConnections.2/@children.0" sourceEnd="//@children.4/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Access»" size="50,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="129,138" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.4/@sourceConnections.0" name="Element" location="210,255" size="94,67" id="pl.uz.zgora.calculator.asm/Element">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="71,18">
+      <children xsi:type="editmodel:MethodEditModel" name="evaluate" id="pl.uz.zgora.calculator.asm/Element#evaluate()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Value" location="210,447" size="94,103" id="pl.uz.zgora.calculator.asm/Value">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="71,54">
+      <children xsi:type="editmodel:MethodEditModel" name="Value" id="pl.uz.zgora.calculator.asm/Value#Value(D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="evaluate" id="pl.uz.zgora.calculator.asm/Value#evaluate()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="pl.uz.zgora.calculator.asm/Value#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="pl.uz.zgora.calculator.asm/Element&lt;-pl.uz.zgora.calculator.asm/Value" source="//@children.6" target="//@children.4/@sourceConnections.0" targetEnd="//@children.6/@sourceConnections.0/@children.1" sourceEnd="//@children.6/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="47,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="pl.uz.zgora.calculator.asm/Value-Standard::Call->pl.uz.zgora.calculator.asm/StringTemplates" source="//@children.6" target="//@children.2" targetEnd="//@children.6/@sourceConnections.1/@children.2" label="//@children.6/@sourceConnections.1/@children.0" sourceEnd="//@children.6/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="29,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="92,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,300"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="InPackage" properties="wireOptions=7;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

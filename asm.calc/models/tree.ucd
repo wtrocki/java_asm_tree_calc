@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="tree" size="1201,735" id="pl.uz.zgora.calculator.core.tree" metadata="uml2-1.0" initialized="true" tag="1000" key="32303037303533312D3130303020706C2E757A2E7A676F72612E63616C63756C61746F722F74726F6B656E">
+  <children xsi:type="editmodel:EnumerationEditModel" name="TreeElemens" location="210,30" size="125,197" id="pl.uz.zgora.calculator.core.tree/TreeElemens" runTimeClassModel="SUB%,BRACKET%,DIV%,MUL%,POW%,ID%,ERROR%,ADD%">
+    <children xsi:type="editmodel:CompartmentEditModel" size="67,144">
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="POW" location="27,1" id="pl.uz.zgora.calculator.core.tree/TreeElemens#POW%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="DIV" id="pl.uz.zgora.calculator.core.tree/TreeElemens#DIV%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="ID" id="pl.uz.zgora.calculator.core.tree/TreeElemens#ID%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="ERROR" id="pl.uz.zgora.calculator.core.tree/TreeElemens#ERROR%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="BRACKET" id="pl.uz.zgora.calculator.core.tree/TreeElemens#BRACKET%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="MUL" id="pl.uz.zgora.calculator.core.tree/TreeElemens#MUL%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="SUB" id="pl.uz.zgora.calculator.core.tree/TreeElemens#SUB%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="ADD" id="pl.uz.zgora.calculator.core.tree/TreeElemens#ADD%"/>
+    </children>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Pow" location="986,275" size="101,175" id="pl.uz.zgora.calculator.core.tree/Pow" runTimeClassModel="getPostfix(),getKind(),getChild(),Pow(Lpl.uz.zgora.calculator.core.tree.Tree;Lpl.uz.zgora.calculator.core.tree.Tree;),left,right,getPrefix()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="68,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="left" id="pl.uz.zgora.calculator.core.tree/Pow#left"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="right" id="pl.uz.zgora.calculator.core.tree/Pow#right"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="78,90">
+      <children xsi:type="editmodel:MethodEditModel" name="Pow" id="pl.uz.zgora.calculator.core.tree/Pow#Pow(Lpl.uz.zgora.calculator.core.tree.Tree;Lpl.uz.zgora.calculator.core.tree.Tree;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getChild" id="pl.uz.zgora.calculator.core.tree/Pow#getChild()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getKind" id="pl.uz.zgora.calculator.core.tree/Pow#getKind()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPostfix" id="pl.uz.zgora.calculator.core.tree/Pow#getPostfix()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPrefix" id="pl.uz.zgora.calculator.core.tree/Pow#getPrefix()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="pl.uz.zgora.calculator.core.tree/Tree&lt;-pl.uz.zgora.calculator.core.tree/Pow" source="//@children.1" target="//@children.8/@sourceConnections.0" targetEnd="//@children.1/@sourceConnections.0/@children.1" sourceEnd="//@children.1/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="50,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.8/@sourceConnections.0" name="Tree" location="443,15" size="101,175" id="pl.uz.zgora.calculator.core.tree/Tree" runTimeClassModel="getPostfix(),getKind(),build1(Lpl.uz.zgora.calculator.core.tree.TreeElemens;Lpl.uz.zgora.calculator.core.tree.Tree;),getChild(),build2(Lpl.uz.zgora.calculator.core.tree.TreeElemens;Lpl.uz.zgora.calculator.core.tree.Tree;Lpl.uz.zgora.calculator.core.tree.Tree;),getPrefix(),toString()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="78,126">
+      <children xsi:type="editmodel:MethodEditModel" name="build1" id="pl.uz.zgora.calculator.core.tree/Tree#build1(Lpl.uz.zgora.calculator.core.tree.TreeElemens;Lpl.uz.zgora.calculator.core.tree.Tree;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="build2" id="pl.uz.zgora.calculator.core.tree/Tree#build2(Lpl.uz.zgora.calculator.core.tree.TreeElemens;Lpl.uz.zgora.calculator.core.tree.Tree;Lpl.uz.zgora.calculator.core.tree.Tree;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getChild" id="pl.uz.zgora.calculator.core.tree/Tree#getChild()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getKind" id="pl.uz.zgora.calculator.core.tree/Tree#getKind()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPostfix" id="pl.uz.zgora.calculator.core.tree/Tree#getPostfix()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPrefix" id="pl.uz.zgora.calculator.core.tree/Tree#getPrefix()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="pl.uz.zgora.calculator.core.tree/Tree#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Id" location="705,275" size="101,175" id="pl.uz.zgora.calculator.core.tree/Id" runTimeClassModel="getKind(),getPostfix(),ref,getChild(),start,getPrefix(),Id(II)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="58,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="ref" id="pl.uz.zgora.calculator.core.tree/Id#ref"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="start" id="pl.uz.zgora.calculator.core.tree/Id#start"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="78,90">
+      <children xsi:type="editmodel:MethodEditModel" name="Id" id="pl.uz.zgora.calculator.core.tree/Id#Id(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getChild" id="pl.uz.zgora.calculator.core.tree/Id#getChild()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getKind" id="pl.uz.zgora.calculator.core.tree/Id#getKind()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPostfix" id="pl.uz.zgora.calculator.core.tree/Id#getPostfix()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPrefix" id="pl.uz.zgora.calculator.core.tree/Id#getPrefix()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="pl.uz.zgora.calculator.core.tree/Tree&lt;-pl.uz.zgora.calculator.core.tree/Id" source="//@children.3" target="//@children.8/@sourceConnections.0" targetEnd="//@children.3/@sourceConnections.0/@children.1" sourceEnd="//@children.3/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="50,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Error" location="836,275" size="120,193" id="pl.uz.zgora.calculator.core.tree/Error" runTimeClassModel="getKind(),getPostfix(),message,getChild(),start,getPrefix(),Error(II),end">
+    <children xsi:type="editmodel:CompartmentEditModel" size="97,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="end" id="pl.uz.zgora.calculator.core.tree/Error#end"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="message" id="pl.uz.zgora.calculator.core.tree/Error#message"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="start" id="pl.uz.zgora.calculator.core.tree/Error#start"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="78,90">
+      <children xsi:type="editmodel:MethodEditModel" name="Error" id="pl.uz.zgora.calculator.core.tree/Error#Error(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getChild" id="pl.uz.zgora.calculator.core.tree/Error#getChild()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getKind" id="pl.uz.zgora.calculator.core.tree/Error#getKind()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPostfix" id="pl.uz.zgora.calculator.core.tree/Error#getPostfix()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPrefix" id="pl.uz.zgora.calculator.core.tree/Error#getPrefix()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="pl.uz.zgora.calculator.core.tree/Tree&lt;-pl.uz.zgora.calculator.core.tree/Error" source="//@children.4" target="//@children.8/@sourceConnections.0" targetEnd="//@children.4/@sourceConnections.0/@children.1" sourceEnd="//@children.4/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="60,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Div" location="443,275" size="101,175" id="pl.uz.zgora.calculator.core.tree/Div" runTimeClassModel="getPostfix(),getKind(),getChild(),Div(Lpl.uz.zgora.calculator.core.tree.Tree;Lpl.uz.zgora.calculator.core.tree.Tree;),left,right,getPrefix()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="68,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="left" id="pl.uz.zgora.calculator.core.tree/Div#left"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="right" id="pl.uz.zgora.calculator.core.tree/Div#right"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="78,90">
+      <children xsi:type="editmodel:MethodEditModel" name="Div" id="pl.uz.zgora.calculator.core.tree/Div#Div(Lpl.uz.zgora.calculator.core.tree.Tree;Lpl.uz.zgora.calculator.core.tree.Tree;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getChild" id="pl.uz.zgora.calculator.core.tree/Div#getChild()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getKind" id="pl.uz.zgora.calculator.core.tree/Div#getKind()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPostfix" id="pl.uz.zgora.calculator.core.tree/Div#getPostfix()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPrefix" id="pl.uz.zgora.calculator.core.tree/Div#getPrefix()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="pl.uz.zgora.calculator.core.tree/Tree&lt;-pl.uz.zgora.calculator.core.tree/Div" source="//@children.5" target="//@children.8/@sourceConnections.0" targetEnd="//@children.5/@sourceConnections.0/@children.1" sourceEnd="//@children.5/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="50,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Sub" location="312,275" size="101,175" id="pl.uz.zgora.calculator.core.tree/Sub" runTimeClassModel="getKind(),getPostfix(),getChild(),Sub(Lpl.uz.zgora.calculator.core.tree.Tree;Lpl.uz.zgora.calculator.core.tree.Tree;),left,right,getPrefix()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="68,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="left" id="pl.uz.zgora.calculator.core.tree/Sub#left"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="right" id="pl.uz.zgora.calculator.core.tree/Sub#right"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="78,90">
+      <children xsi:type="editmodel:MethodEditModel" name="Sub" id="pl.uz.zgora.calculator.core.tree/Sub#Sub(Lpl.uz.zgora.calculator.core.tree.Tree;Lpl.uz.zgora.calculator.core.tree.Tree;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getChild" id="pl.uz.zgora.calculator.core.tree/Sub#getChild()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getKind" id="pl.uz.zgora.calculator.core.tree/Sub#getKind()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPostfix" id="pl.uz.zgora.calculator.core.tree/Sub#getPostfix()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPrefix" id="pl.uz.zgora.calculator.core.tree/Sub#getPrefix()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="pl.uz.zgora.calculator.core.tree/Tree&lt;-pl.uz.zgora.calculator.core.tree/Sub" source="//@children.6" target="//@children.8/@sourceConnections.0" targetEnd="//@children.6/@sourceConnections.0/@children.1" sourceEnd="//@children.6/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="50,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Mul" location="574,275" size="101,175" id="pl.uz.zgora.calculator.core.tree/Mul" runTimeClassModel="getPostfix(),getKind(),getChild(),left,Mul(Lpl.uz.zgora.calculator.core.tree.Tree;Lpl.uz.zgora.calculator.core.tree.Tree;),right,getPrefix()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="68,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="left" id="pl.uz.zgora.calculator.core.tree/Mul#left"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="right" id="pl.uz.zgora.calculator.core.tree/Mul#right"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="78,90">
+      <children xsi:type="editmodel:MethodEditModel" name="Mul" id="pl.uz.zgora.calculator.core.tree/Mul#Mul(Lpl.uz.zgora.calculator.core.tree.Tree;Lpl.uz.zgora.calculator.core.tree.Tree;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getChild" id="pl.uz.zgora.calculator.core.tree/Mul#getChild()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getKind" id="pl.uz.zgora.calculator.core.tree/Mul#getKind()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPostfix" id="pl.uz.zgora.calculator.core.tree/Mul#getPostfix()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPrefix" id="pl.uz.zgora.calculator.core.tree/Mul#getPrefix()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="pl.uz.zgora.calculator.core.tree/Tree&lt;-pl.uz.zgora.calculator.core.tree/Mul" source="//@children.7" target="//@children.8/@sourceConnections.0" targetEnd="//@children.7/@sourceConnections.0/@children.1" sourceEnd="//@children.7/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="50,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Add" location="50,275" size="101,175" id="pl.uz.zgora.calculator.core.tree/Add" runTimeClassModel="getKind(),getPostfix(),Add(Lpl.uz.zgora.calculator.core.tree.Tree;Lpl.uz.zgora.calculator.core.tree.Tree;),getChild(),left,right,getPrefix()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="68,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="left" id="pl.uz.zgora.calculator.core.tree/Add#left"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="right" id="pl.uz.zgora.calculator.core.tree/Add#right"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="78,90">
+      <children xsi:type="editmodel:MethodEditModel" name="Add" id="pl.uz.zgora.calculator.core.tree/Add#Add(Lpl.uz.zgora.calculator.core.tree.Tree;Lpl.uz.zgora.calculator.core.tree.Tree;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getChild" id="pl.uz.zgora.calculator.core.tree/Add#getChild()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getKind" id="pl.uz.zgora.calculator.core.tree/Add#getKind()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPostfix" id="pl.uz.zgora.calculator.core.tree/Add#getPostfix()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPrefix" id="pl.uz.zgora.calculator.core.tree/Add#getPrefix()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.9/@sourceConnections.0 //@children.6/@sourceConnections.0 //@children.5/@sourceConnections.0 //@children.7/@sourceConnections.0 //@children.3/@sourceConnections.0 //@children.4/@sourceConnections.0 //@children.1/@sourceConnections.0" autoLocated="true" id="pl.uz.zgora.calculator.core.tree/Tree&lt;-pl.uz.zgora.calculator.core.tree/Add" source="//@children.8" target="//@children.2" targetEnd="//@children.8/@sourceConnections.0/@children.1" sourceEnd="//@children.8/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="50,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="50,175" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Bracket" location="181,275" size="101,157" id="pl.uz.zgora.calculator.core.tree/Bracket" runTimeClassModel="getKind(),getPostfix(),getChild(),expr,Bracket(Lpl.uz.zgora.calculator.core.tree.Tree;),getPrefix()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="69,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="expr" id="pl.uz.zgora.calculator.core.tree/Bracket#expr"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="78,90">
+      <children xsi:type="editmodel:MethodEditModel" name="Bracket" id="pl.uz.zgora.calculator.core.tree/Bracket#Bracket(Lpl.uz.zgora.calculator.core.tree.Tree;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getChild" id="pl.uz.zgora.calculator.core.tree/Bracket#getChild()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getKind" id="pl.uz.zgora.calculator.core.tree/Bracket#getKind()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPostfix" id="pl.uz.zgora.calculator.core.tree/Bracket#getPostfix()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPrefix" id="pl.uz.zgora.calculator.core.tree/Bracket#getPrefix()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="pl.uz.zgora.calculator.core.tree/Tree&lt;-pl.uz.zgora.calculator.core.tree/Bracket" source="//@children.9" target="//@children.8/@sourceConnections.0" targetEnd="//@children.9/@sourceConnections.0/@children.1" sourceEnd="//@children.9/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="50,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" properties="wireOptions=3;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
